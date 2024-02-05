@@ -21,7 +21,7 @@ In the video, Guillermo presents two methods to solve this. The first, covered b
 
 Here I present a slightly different way of explaining the latter method. Although it is less elegant than the video, it doesn't require knowing the SWAP decomposition and requires less cleverness in its (one) substitution.
 
-# The Solution:
+# The solution:
 We can write out the representation of the problem like this:
 
 $$A B U C U B = S$$
