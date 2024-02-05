@@ -7,7 +7,7 @@ Step-by-step solution to the Pennylane Code Camp challenge question covered in [
 
 **`solve_pennylane.ipynb`** Notebook for obtaining explicit form of `U` matrix in 2-qubit basis
 
-**`find_matrix_form_example.pdf`** PDF of notes showing explicit example of how to derive the matrix form of parallel Hadamard gates in 2-qubit basis
+**`get_matrix_examples.pdf`** Notes showing explicit examples of how to derive matrix form of two-qubit gates
 
 # The question:
 Solve for the gate operation `U` such that the whole algorithm depicted in the picture below is equivalent to a SWAP gate.
