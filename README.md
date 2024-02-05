@@ -14,18 +14,31 @@ Here I present a slightly different explanation of the latter method. It is a le
 We can write out the representation of the problem like this:
 
 $$A B U C U B = S$$
+
 where $A$ is the CNOT gate (qubit 1 control), $B$ is the parallel Hadamard gates, $U$ is our gate to solve for, $C$ is a CNOT (qubit 2 control), $S$ is the SWAP gate.
 
-Let's try to isolate $U$. We are particularly using the fact that these are all unitary matrices, with $A A^{-1} = A^{-1}A= 1$ \
+Let's try to isolate $U$. \
+We are particularly using the fact that these are all unitary matrices, with $A A^{-1} = A^{-1}A= 1$. \
+
 First, multiply both sides from the left by $A^{-1}$, then by $B^{-1}$:
+
 $$ U C U B = B^{-1} A^{-1} S $$
+
 Next, multiply both sides from the right by $B^{-1}$:
-$$ U C U = B^{-1} A^{-1} S B^{-1}$$ 
+
+$$ U C U = B^{-1} A^{-1} S B^{-1} $$
+
 Now let's do one substitution. Let $U'=CU$:
+
 $$ C^{-1} U' U' = B^{-1}ADB^{-1} $$
+
 Multiplying both sides with $C$ and taking the square root we get
+
 $$ U' = \sqrt{CB^{-1}ADB^{-1}} $$
-and subsituting back, finally:
+
+and subsituting back, we get the final analytical form of $U$:
+
 $$ U = C^{-1} \sqrt{CB^{-1}ADB^{-1}} $$
+
 
 Refer to the notebook for a quick demonstration solving this in python using just numpy and scipy. Refer to the pdf for a very explicit example of how you can determine the matrix form of these 2-qubit gates.
