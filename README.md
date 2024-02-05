@@ -5,6 +5,7 @@ Step-by-step solution to the Pennylane Code Camp challenge question covered in [
 Solve for the gate operation `U` such that the whole algorithm depicted in the picture below is equivalent to a SWAP gate.
 
 ![Pennylane Problem](pennylane_problem.png)
+
 In the video, Guillermo presents two methods to solve this. The first, covered briefly, is via machine learning: rewrite `U` as a series of several parameter-dependent parts, then minimize the loss function (SWAP gate minus our current algorithm guess) with respect to the parameter values. The second method, explained in more detail, is via compilation, using clever substitutions and the fact that the SWAP gate can be decomposed into simpler parts. 
 
 Here I present a slightly different explanation of the latter method. It is a less elegant solution, but doesn't require knowing the decomposition and requires less cleverness in substitutions. See the notebook `solve_pennylane.ipynb` for a quick demonstration using numpy.
